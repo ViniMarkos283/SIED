@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.home_section{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-family: poppins;
+    position: absolute;
+}
+.navbar{
+    width: 100%;
+    height: 9%;
+    /* background-color: #078bf0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.navbar .logo p{
+    font-size: 24px;
+    padding-left: 140px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar .nav-links{
+    background-color: #FF5733;
+    padding: 20px 40px;
+    border-bottom-left-radius: 20px;
+}
+.navbar .nav-links a{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 18px;
+    color: #fff;
+    position: relative;
+}
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    left: 0;
+    bottom: -2px;
+    transition: .5s;
+}
+.nav-links a:hover::after{
+    width: 40%;
+}
+
+/**/
+.home_section::after{
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 140%; 
+    top: 0;
+    left: 0;
+    background-color: #530a97;
+}
+.container {
+    width: 100%;
+    margin: 7% 0 6% 0;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .left_bar{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 25px rgba(51, 51, 51, 0.156);
+}
+.left_bar img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: all .8s ease;
+}
+.left_bar img:hover{
+    transform: scale(1.06);
+    filter: grayscale(0);
+}
+.container .right_bar{
+    width: 48%;
+    text-align: left;
+    color: #333;
+}
+.right_bar h1{
+    font-size: 62px;
+    margin-bottom: 19px;
+    font-family: water brush;
+}
+.right_bar h1 span{
+    color: #FF5733;
+}
+.right_bar p{ 
+    font-size: 16px;
+    max-width: 460px;
+    line-height: 27px;
+}
+#para_1{
+    margin-bottom: 10px;
+}
+.btns{
+    margin-top: 38px;
+}
+.btns a{
+    font-size: 16px;
+    padding: 7px 17px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    transition: all .5s ease;
+    background-color: #FF5733;
+    border: 2px solid #FF5733;
+}
+.btns a:hover{
+    color: #333;
+    border: 2px solid #333;
+    background-color: transparent;
+}
+.social_links{
+    margin-top: 59px;
+    display: flex;
+}
+.social_links i{
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 25px;
+    color: #333;
+    font-size: 23px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all .6s ease;
+    box-shadow: 2px 2px 13px rgba(51, 51, 51, 0.486);
+}
+.social_links i:hover{
+    color: #fff;
+}
+.social_links i:nth-child(1):hover{
+    background-color: #2d4985;
+}
+.social_links i:nth-child(2):hover{
+    background-color: #f33092;
+}
+.social_links i:nth-child(3):hover{
+    background-color: #1d94f0;
+}
+.social_links i:nth-child(4):hover{
+    background-color: #000000;
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: 100px;
+    background: url('../IMGBIA/TESTE.png'); 
+    background-repeat: no-repeat; /*Para não repetir a imagem*/
+    background-size: cover; /*A imagem vai se ajustar ao tamaho desejado, sem se distorce*/
+    background-position: center; /*Para que mantenha a imagem sempre centralizada*/
+    }
+  /*Fim*/
+
+
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {}
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+      text-decoration: none;
+      outline: none;
+  }
+  
+  a,
+  a:active,
+  a:focus {
+      color: #6f6f6f;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-duration: .2s;
+      -ms-transition-duration: .2s;
+      -moz-transition-duration: .2s;
+      -webkit-transition-duration: .2s;
+      -o-transition-duration: .2s;
+  }
+  
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  img {
+max-width: 100%;
+height: auto;
+}
+  section {
+      padding: 60px 0;
+     /* min-height: 100vh;*/
+  }
+
+.sec-title{
+position:relative;
+z-index: 1;
+margin-bottom:60px;
+}
+
+.sec-title .title{
+position: relative;
+display: block;
+font-size: 18px;
+line-height: 24px;
+color: #ff2222;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.sec-title h2{
+position: relative;
+display: block;
+font-size:40px;
+line-height: 1.28em;
+color: #222222;
+font-weight: 600;
+padding-bottom:18px;
+}
+
+.sec-title h2:before{
+position:absolute;
+content:'';
+left:0px;
+bottom:0px;
+width:50px;
+height:3px;
+background-color:#d1d2d6;
+}
+
+.sec-title .text{
+position: relative;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+margin-top: 35px;
+}
+
+.sec-title.light h2{
+color: #ffffff;
+}
+
+.sec-title.text-center h2:before{
+left:50%;
+margin-left: -25px;
+}
+
+.list-style-one{
+position:relative;
+}
+
+.list-style-one li{
+position:relative;
+font-size:16px;
+line-height:26px;
+color: #222222;
+font-weight:400;
+padding-left:35px;
+margin-bottom: 12px;
+}
+
+.list-style-one li:before {
+content: "\f058";
+position: absolute;
+left: 0;
+top: 0px;
+display: block;
+font-size: 18px;
+padding: 0px;
+color: #ff2222;
+font-weight: 600;
+-moz-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1.6;
+font-family: "Font Awesome 5 Free";
+}
+
+.list-style-one li a:hover{
+color: #44bce2;
+}
+
+.btn-style-one{
+position: relative;
+display: inline-block;
+font-size: 17px;
+line-height: 30px;
+color: #ffffff;
+padding: 10px 30px;
+font-weight: 600;
+overflow: hidden;
+letter-spacing: 0.02em;
+background-color: #ff2222;
+}
+
+.btn-style-one:hover{
+background-color: #001e57;
+color: #ffffff;
+}
+.about-section{
+position: relative;
+padding: 120px 0 70px;
+}
+
+.about-section .sec-title{
+margin-bottom: 45px;
+}
+
+.about-section .content-column{
+position: relative;
+margin-bottom: 50px;
+}
+
+.about-section .content-column .inner-column{
+position: absolute;
+padding-left: 40%;
+padding-right: 15%;
+}
+
+.about-section .text{
+margin-bottom: 40px;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+}
+
+.about-section .list-style-one{
+margin-bottom: 45px;
+}
+
+.about-section .btn-box{
+position: relative;
+}
+
+.about-section .btn-box a{
+padding: 15px 50px;
+}
+
+.about-section .image-column{
+position: relative;
+}
+
+.about-section .image-column .text-layer{
+position: absolute;
+right: -110px;
+top: 50%;
+font-size: 325px;
+line-height: 1em;
+color: #ffffff;
+margin-top: -175px;
+font-weight: 500;
+}
+
+.about-section .image-column .inner-column{
+position: relative;
+padding-left: 120px;
+padding-bottom: 125px;
+}
+
+.about-section .image-column .inner-column:before{
+position: absolute;
+left: -75px;
+top: 65px;
+height: 520px;
+width: 520px;
+background-image:url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
+content: "";
+}
+
+.about-section .image-column .image-1{
+position: relative;
+}
+
+.about-section .image-column .image-2{
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+.about-section .image-column .image-2 img,
+.about-section .image-column .image-1 img{
+box-shadow: 0 30px 50px rgba(8,13,62,.15);
+}
+
+.about-section .image-column .video-link{
+position: absolute;
+left: 70px;
+top: 170px;
+}
+
+.about-section .image-column .video-link .link{
+position: relative;
+display: block;
+font-size: 22px;
+color: #191e34;
+font-weight: 400;
+text-align: center;
+height: 100px;
+width: 100px;
+line-height: 100px;
+background-color: #ffffff;
+border-radius: 50%;
+box-shadow: 0 30px 50px rgba(8,13,62,.15);
+-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+.about-section .image-column .video-link .link:hover{
+background-color: #191e34;
+color: #ffffff;
+}

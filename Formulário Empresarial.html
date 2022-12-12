@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSBIA/Formulário Empresarial.css">
+    <link rel="shortcut icon" href="IMGBIA/" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+<!---Div Imagem--->
+<div class="container">
+    <div class="form-image">
+        <img src="IMGBIA/undraw_shopping_re_hdd9.svg">
+    </div>
+<!---Fim da Div Imagem--->
+
+
+<div class="form">
+    <form action="#">
+        <div class="form-header">
+            <div class="title">
+                <h1>Preencha os Dados Abaixo</h1>
+            </div>
+        </div>
+
+        <h3>Dados do Representante</h3>
+        <div class="input-group">
+
+            <div class="input-box">
+                <label for="fullname">Nome Completo</label>
+                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+
+            <div class="input-box">
+                <label for="area">Selecione a Área</label>
+                <select required>
+                    <option>Selecione</option>
+                    <option>Tecnologia</option>
+                    <option>Industrial</option>
+                    <option>Administração</option>
+                </select>
+            </div>
+
+            <h3>Dados do Representante</h3>
+        <div class="input-group">
+
+            <div class="input-box">
+                <label for="fullname">Razão social</label>
+                <input type="text" placeholder="Digite seu nome" class="inputs required">
+                <span class="span-required">Digite a Razão Social</span>
+            </div>
+
+            <div class="input-box">
+                <label for="fullname">E-mail</label>
+                <input type="email" placeholder="Digite seu melhor email" class="inputs required" oninput="emailValidate()">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+
+            <div class="input-box">
+                <label for="fullname">CNPJ</label>
+                <input type="fullname" placeholder="Senha" class="inputs required" oninput="cnpjValidate()">
+                <span class="span-required">Digite um CNPJ</span>
+            </div>
+            
+            <div class="input-box">
+                <label for="fullname">Telefone</label>
+                <input type="fullname" placeholder="Senha" class="inputs required" oninput="telValidate()">
+                <span class="span-required">Digite um Telefone</span>
+            </div>
+
+            <div class="input-box">
+                <label for="fullname">Endereço</label>
+                <input type="fullname" placeholder="Senha" class="inputs required">
+                <span class="span-required">Digite seu endereço</span>
+            </div>
+
+            <div class="input-box">
+                <label for="fullname">CEP</label>
+                <input type="fullname" placeholder="Senha" class="inputs required" oninput="cepValidate()">
+                <span class="span-required">Digite seu CEP</span>
+            </div>
+        </div>
+            
+            <div class="login-button">
+                <button id='submit' onclick="" style="color: white;" >Enviar</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="JSBIA/form.js"></script>
+</body>
+</html>

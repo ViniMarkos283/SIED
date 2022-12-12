@@ -1,0 +1,116 @@
+div.cento {
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    height: min-content;
+    max-width: 100%;
+}
+
+div.order {
+    display: inline-flex;
+    max-width: 100%;
+
+}
+
+div.unit {
+    background-color: #2cb0c42c;
+    padding: 20px;
+    border: 1px solid #0eccb9;
+    border-radius: 20px;
+    width: min-content;
+    margin: 50px;
+}
+
+button.map {
+    color: white;
+    font-weight: bold;
+    background-color: #FF9168;
+    border-radius: 40px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+
+}
+
+button.map:hover {
+    background-color: #ff7c4d;
+    transition: 0.5s;
+
+}
+
+div.unit a {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 2px solid gray;
+    transition: 0.5s;
+
+}
+
+div.unit a:hover {
+    color: rgb(0, 204, 255);
+    border-bottom: 2px solid rgb(0, 204, 255);
+    transition: 0.5s;
+
+}
+
+img.nano {
+    width: 25px;
+    height: min-content;
+    float: left;
+}
+
+img.giga {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+button.endless {
+    background-color: #FF9168;
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+button.endless:hover {
+    background-color: #ff7c4d;
+    transition: 0.5s;
+
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+@media (max-width: 700px) {
+    div.order {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+
+}

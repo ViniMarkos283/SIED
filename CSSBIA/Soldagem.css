@@ -1,0 +1,246 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+/*Fim*/
+
+/*Banner*/
+.banner{
+  width: 100%;
+  height: 815px;
+  background: url('../IMGBIA/Banner\ Tecnologia\ da\ Informação.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; /*Para que mantenha a imagem sempre centralizada*/
+  }
+/*Fim*/
+
+/*Começo Root*/
+:root {
+  font-size: 16px; 
+  background: #fff;
+  --default-font-size: calc(var(--bu) * 0.75);
+  --bu: calc(1rem + max(1vh, 1vw));
+  --primary: #fff;
+  --dark: #3b3330;
+  --dark-light: #584b46;
+  --dark-lighter: #74635d;
+  --light: #dedfe7;
+  --light-dark: #cecfd1;
+  --light-darker: rgb(243, 238, 238);
+  --accent: #52CB70;
+  --accent-light: #c6775d;
+  --accent-lighter: #d39782; 
+}
+/*Fim*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--dark);
+  font-family: "Jaldi", sans-serif;
+  font-size: var(--default-font-size);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+/* create generic section */
+
+section {
+  position: relative;
+  padding: calc(var(--bu) * 2);
+  margin: auto;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--bu);
+  height: 400px;
+  width: 100%;
+  background: var(--primary);
+}
+
+/* simulate responsivity */
+
+#second {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #second {
+    display: block;
+  }
+}
+
+/*Card*/
+.container {
+  position: relative;
+  height: 100%;
+  flex-basis: 75%;
+  border-radius: var(--bu);
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-basis: 100%;
+  }
+}
+
+.container figure {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  inset: 0 auto;
+  height: 70%;
+  width: 45%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.5);
+  overflow: hidden;
+}
+
+.container figure img {
+  min-height: 100%;
+  transform: rotate(0deg);
+  scale: 1;
+  transition: scale 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.card {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 85%;
+  border-radius: var(--bu);
+  background: linear-gradient(var(--light), var(--light-dark));
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  inset: 0 0 0 auto;
+  width: 64.5%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  padding: calc(var(--bu) * 0.25) calc(var(--bu) * 0.5);
+  margin: auto;
+  inset: auto 0 50%;
+  font-family: "Capriola", sans-serif;
+  text-align: center;
+  transition: bottom 500ms ease-in-out;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 5%;
+  width: 90%;
+  height: 5px;
+  border-radius: 2.5px;
+  background: var(--accent);
+  transition: width 500ms 300ms ease-in-out;
+}
+
+.tags {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--bu) * 0.25);
+  padding: calc(var(--bu) * 0.25) calc(var(--bu) * 0.5);
+  margin: auto;
+  inset: 50% 0 auto;
+  opacity: 100%;
+  transition: opacity 500ms 800ms;
+}
+
+.tags p {
+  font-size: calc(var(--default-font-size) * 0.75);
+}
+
+.tags span {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 100%;
+  padding: 0 calc(var(--bu) * 0.5);
+  transition: top 500ms ease-in;
+}
+
+.text p {
+  font-size: calc(var(--default-font-size) * 0.9);
+}
+
+.content > span {
+  font-size: calc(var(--bu) * 1.75);
+  opacity: 100%;
+  transform: translateY(0px);
+  transition: transform 500ms 500ms ease-out, opacity 300ms 500ms;
+}
+
+a:hover figure {
+  box-shadow: 5px 5px 30px hsla(0, 0%, 0%, 0.5);
+}
+
+a:hover figure img {
+  transform: rotate(-1.25deg);
+  scale: 1.1;
+  transition: scale 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+a:hover .card {
+  transform: translateX(2.5px) translateY(2.5px);
+  background: linear-gradient(var(--light), var(--light-darker));
+}
+
+a:hover .title {
+  bottom: 75%;
+  transition: bottom 300ms 495ms ease-out;
+}
+
+a:hover .title::before {
+  width: 0%;
+  transition: width 300ms 300ms ease-in;
+}
+
+a:hover .tags {
+  opacity: 0%;
+  transition: opacity 300ms ease-in;
+}
+
+a:hover .text {
+  top: 25%;
+  transition: top 500ms 300ms ease-out;
+}
+
+a:hover .content > span {
+  transform: translateY(25%);
+  opacity: 0%;
+  transition: transform 300ms ease-in, opacity 200ms;
+}
+/*Fim*/
+
+ 
+
+
+
+
+
+
+
+
